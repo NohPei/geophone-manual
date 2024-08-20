@@ -1,7 +1,7 @@
 Gateway Python Module
 =====================
 
-.. autosummary::
-   :toctree: generated
+.. toctree::
+   :maxdepth: 4
 
    geoscope_gateway

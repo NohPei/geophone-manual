@@ -19,5 +19,5 @@ Contents
 .. toctree::
 
    usage
-   gateway/api
+   gateway/modules
 

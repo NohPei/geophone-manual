@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'Lumache'
+project = 'GeoMCU'
 copyright = '2021, Graziella'
 author = 'Graziella'
 
@@ -14,10 +14,11 @@ version = '0.1.0'
 extensions = [
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
+    'sphinx.ext.napoleon',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
-    'sphinx.ext.napoleon'
+    'sphinx_rtd_dark_mode'
 ]
 
 intersphinx_mapping = {
@@ -25,6 +26,14 @@ intersphinx_mapping = {
     'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
 }
 intersphinx_disabled_domains = ['std']
+
+napoleon_include_init_with_doc = True
+napoleon_include_special_with_doc = True
+
+autodoc_default_options = {
+    "members": True,
+    "undoc-members": True
+}
 
 templates_path = ['_templates']
 
