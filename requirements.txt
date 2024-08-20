@@ -1,4 +1,4 @@
 sphinx
 sphinx-rtd-theme
 sphinx-rtd-dark-mode
-geoscope_gateway @ git+https://github.com/NohPei/geoscope-gateway.git
+geoscope_gateway @ git+https://${GIT_TOKEN}@github.com/NohPei/geoscope-gateway.git
