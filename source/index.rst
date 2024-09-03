@@ -1,23 +1,28 @@
 Welcome to the GeoMCU documentation!
 ====================================
 
-**GeoMCU** is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**GeoMCU** is an interface for `geophone elements <https://www.seis-tech.com/sm-24-equivalent-geophone-sensor/>`_, enabling them to be organized into sensor networks for structural vibration sensing tasks, including:
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+* Structural Health Monitoring
+* Human and Animal Activity Detection
+* Vitals Monitoring, such as Heart Rate and Respiration
+* Footstep Detection
+
+The project includes the interface PCB design (See :doc:`/hardware/index`), firmware code, and a :doc:`/gateway/index`.
+
+Check out the :doc:`usage` section for further information or jump to specific sections on how to use each part of the system.
 
 .. note::
 
-   This project is under active development.
+   This documentation is under active development.
 
 Contents
 --------
 
 .. toctree::
+   :maxdepth: 5
 
    usage
-   gateway/modules
-
+   hardware/index
+   gateway/index
+   firmware/index

@@ -1,13 +1,10 @@
-geoscope\_gateway package
-=========================
+Gateway Python Module
+=============================
 
 .. automodule:: geoscope_gateway
    :members:
    :undoc-members:
    :show-inheritance:
-
-Submodules
-----------
 
 geoscope\_gateway.emulator module
 ---------------------------------
