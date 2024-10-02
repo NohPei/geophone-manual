@@ -24,3 +24,9 @@ repos:
     rev: v0.9.1
     hooks:
       - id: sphinx-lint
+  - repo: https://github.com/compilerla/conventional-pre-commit
+    rev: v3.4.0
+    hooks:
+      - id: conventional-pre-commit
+        stages: [commit-msg]
+        args: []

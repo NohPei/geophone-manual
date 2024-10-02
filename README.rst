@@ -16,3 +16,5 @@ Written to be generated with `Sphinx <https://sphinx-doc.org>`_, and hosted on `
 Read the manual here:
 
 https://geomcu.readthedocs.io/
+
+Copyright©  2024 The Regents of the University of Michigan, `PEI Lab <https://peizhang.engin.umich.edu/>`_
