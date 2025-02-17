@@ -20,7 +20,8 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx_rtd_dark_mode',
     'sphinx_toolbox.wikipedia',
-    'sphinx_toolbox.github'
+    'sphinx_toolbox.github',
+    'sphinxcontrib.bibtex'
 ]
 
 intersphinx_mapping = {
@@ -44,6 +45,8 @@ manpages_url = 'https://man.archlinux.org/man/{page}.{section}'
 
 github_username = "NohPei"
 github_repository = "NohPei/GeoMCU"
+
+bibtex_bibfiles = ['related.bib']
 
 # -- Options for HTML output
 

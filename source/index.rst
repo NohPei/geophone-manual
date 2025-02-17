@@ -26,3 +26,4 @@ Contents
    hardware/index
    gateway/index
    firmware/index
+   related
