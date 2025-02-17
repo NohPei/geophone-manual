@@ -7,7 +7,7 @@ PCB Assembly
 The first step to using a **GeoMCU** system is getting the boards fabricated and assembled.
 
 In general, we've been using `JLCPCB <https://jlcpcb.com/>`_ for this, balancing time and cost.
-However, any :abbr:`PCB (Printed Circuit Board` fabrication house should work, as long as they can create 4 layer boards.
+However, any :abbr:`PCB (Printed Circuit Board)` fabrication house should work, as long as they can create 4 layer boards.
 This manual will proceed assuming our existing `KiCad <https://www.kicad.org/>`_ design files and ordering from `JLCPCB <https://jlcpcb.com/>`_
 
 .. note::
@@ -18,7 +18,7 @@ The basic process for this is:
 
 #. :any:`gerbers`
 #. Get the :abbr:`BoM (Bill of Materials` and placement files (see :any:`bom_cpl`)
-#. Place the order with the :abbr:`PCB (Printer Circuit Board)` fabrication house (see :any:`order`)
+#. Place the order with the :abbr:`PCB (Printer Circuit Board)` fabrication house
 #. Solder the missing signal output connector, if using :any:`wired`.
 
 After that, it's time for :any:`hardware/board_test`.
