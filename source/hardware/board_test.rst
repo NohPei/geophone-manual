@@ -4,8 +4,23 @@ Testing the GeoMCU Hardware
 Tools Needed
 ++++++++++++++
 
+The following tools are needed to test the GeoMCU hardware:
+to test the PCB itself:
+- An oscilloscope
+- An function generator
+- A 12v power supply
+- A computer
+to test with sensor data:
+- An :any:`MQTT broker <network:broker>` or a computer running the :any:`gateway/index`
+- A geophone
+
 Individual PCB Testing
 +++++++++++++++++++++++++
+
+1. Connect 12v power to the board.
+2. use the function generator to generate a 100hz sine wave at 0.5vpp.
+
+
 
 Power Supplies Check
 --------------------
