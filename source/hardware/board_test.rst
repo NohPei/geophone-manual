@@ -17,7 +17,7 @@ Individual PCB Testing
 
 1. **Voltage Checks**
 
-   - The ESP should briefly flash blue when powered on.  
+   - The ESP should briefly flash blue when powered on.
      If it does **not**, do **not** continue testing.
    - ``AGND`` and ``DGND`` should both be 0 V.
    - ``12V`` should read whatever voltage is supplied.
@@ -53,16 +53,16 @@ Individual PCB Testing
 A-Grade vs. B-Grade Boards
 --------------------------
 
-- **A-Grade** boards will not clip until very high gain values.  
+- **A-Grade** boards will not clip until very high gain values.
 - **B-Grade** boards show instability or clipping at relatively lower gain (e.g., 10–12).
 
-If your board passes all of the above, testing is complete.  
+If your board passes all of the above, testing is complete.
 Otherwise, further debugging may be required.
 
 .. note::
 
-   Version 2.7 boards are tested as described above.  
-   Version 2.9 boards **require the gain to be set** before use,  
+   Version 2.7 boards are tested as described above.
+   Version 2.9 boards **require the gain to be set** before use,
    so assume nothing and test all components before setting the gain.
 
 
@@ -96,7 +96,7 @@ Gain Checking
       * Wired analog output (requires an oscilloscope)
       * Output from ``adc dump`` (requires only serial connection and the on-board ADC)
 
-   The signal should vary significantly (swinging between min and max values) when the geophone is moved.  
+   The signal should vary significantly (swinging between min and max values) when the geophone is moved.
    If the output remains flat, the board is not properly sensing vibrations.
 
 

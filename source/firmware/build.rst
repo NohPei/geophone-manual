@@ -19,7 +19,7 @@ Building the Firmware
 
 1. Determine the IP address of your computer (the machine that will host the MQTT broker):
 
-   - Log into your router.  
+   - Log into your router.
    - The router’s IP address is usually printed on its label (unless you use a custom network setup).
 
 2. Set up your development environment:
@@ -30,7 +30,7 @@ Building the Firmware
 3. Open the GeoMCU firmware directory you downloaded earlier, and make the following configuration edits.
 
    **In `data/config/mqtt`:**
-   - ``clientid`` → Change from the default ``S-21`` to a unique name  
+   - ``clientid`` → Change from the default ``S-21`` to a unique name
      *(important if flashing multiple boards — each needs its own ID)*.
    - ``ip`` → Set to the IP address of your MQTT broker (e.g., your laptop).
 
@@ -69,8 +69,8 @@ Flashing to the PCB
 
       platformio run -t uploadfs --upload-port /dev/ttyUSB0
 
-4. Verify the board is running correctly.  
-   Open a serial terminal (e.g., **minicom**) and press Enter — you should see a prompt like ``CMD>``.  
+4. Verify the board is running correctly.
+   Open a serial terminal (e.g., **minicom**) and press Enter — you should see a prompt like ``CMD>``.
    You can also press the **reset** button on the board to view startup messages.
 
    .. code-block:: bash
@@ -82,4 +82,3 @@ Flashing to the PCB
 
 Flashing Configuration in Bulk
 ------------------------------
-
