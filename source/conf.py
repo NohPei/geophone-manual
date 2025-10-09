@@ -21,13 +21,18 @@ extensions = [
     'sphinx_rtd_dark_mode',
     'sphinx_toolbox.wikipedia',
     'sphinx_toolbox.github',
-    'sphinxcontrib.bibtex'
+    'sphinxcontrib.bibtex',
+    'myst_parser',
+    # 'breathe',
 ]
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
     'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
     'pio': ('https://docs.platformio.org/en/latest/', None),
+    'espidf': ('https://docs.espressif.com/projects/esp-idf/en/stable/esp32/', None),
+    'ardu32': ('https://docs.espressif.com/projects/arduino-esp32/en/latest/', None),
+    'ardu8266': ('https://arduino-esp8266.readthedocs.io/en/stable/', None),
 }
 intersphinx_disabled_domains = ['std']
 
@@ -38,6 +43,12 @@ autodoc_default_options = {
     "members": True,
     "undoc-members": True
 }
+
+myst_enable_extensions = [
+    "colon_fence",
+    "dollarmath",
+    "linkify",
+]
 
 templates_path = ['_templates']
 

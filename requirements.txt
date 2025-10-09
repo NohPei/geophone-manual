@@ -3,4 +3,6 @@ sphinx-rtd-theme
 sphinx-rtd-dark-mode
 sphinx-toolbox
 sphinxcontrib-bibtex
+myst-parser[linkify]
+breathe
 geoscope_gateway @ git+https://github.com/NohPei/geoscope-gateway.git

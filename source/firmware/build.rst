@@ -6,9 +6,9 @@ Installing the GeoMCU Firmware
 Getting the Source Code
 =======================
 
-1. Download the latest GeoMCU firmware from GitHub:
+#. Download the latest GeoMCU firmware from GitHub:
    :github:repo:`NohPei/geoscope-sensor`.
-2. Ensure you have the required hardware:
+#. Ensure you have the required hardware:
 
    - GeoMCU board
    - a :any:`Geophone element <geophone>`
@@ -18,14 +18,14 @@ Getting the Source Code
 Building the Firmware
 =====================
 
-1. Determine the IP address of your computer (the machine that will host the
+#. Determine the IP address of your computer (the machine that will host the
    MQTT broker):
 
    - Log into your router.
    - The router’s IP address is usually printed on its label (unless you use a
      custom network setup).
 
-2. Set up your development environment. Do one of:
+#. Set up your development environment. Do one of:
 
    - Install `Visual Studio Code <http://code.visualstudio.com/>`__ with the
      :external:doc:`integration/ide/vscode`
@@ -34,13 +34,16 @@ Building the Firmware
    - Install `Arduino <https://docs.arduino.cc/software/ide/>`__ and manually
      ensure the dependencies in ``platformio.ini`` are all installed
 
-1. Build the firmware
+      - This will also require installing the :external+ardu8266:doc:`ESP8266 Arduino Core <installing>` or :external+ardu32:doc:`ESP32 Arduino <installing>` depending on the board version
+
+#. Build the firmware
 
    - :external:doc:`core/userguide/cmd_run` is the primary command for PlatformIO
+   - See `Arduino's instructions <https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-uploading-a-sketch/>`_ if using Arduino IDE
 
 .. TODO: re-factor these config instructions into the config page
 
-3. Open the GeoMCU firmware directory you downloaded earlier, and make the
+#. Open the GeoMCU firmware directory you downloaded earlier, and make the
    following configuration edits.
 
    ``data/config/mqtt``:
@@ -72,7 +75,7 @@ Building the Firmware
 Flashing to the PCB
 ===================
 
-1. Connect the ESP8266 GeoMCU board to your computer using a USB-to-serial
+#. Connect the ESP8266 GeoMCU board to your computer using a USB-to-serial
    cable with the following wiring:
 
    +-------------------+-------------------+
@@ -84,19 +87,19 @@ Flashing to the PCB
 
    Provide power to the GeoMCU board through the 12 V barrel jack adapter.
 
-2. Flash the board firmware with:
+#. Flash the board firmware with:
 
    .. code:: bash
 
       platformio run -t upload --upload-port /dev/ttyUSB0
 
-3. Upload the filesystem:
+#. Upload the filesystem:
 
    .. code:: bash
 
       platformio run -t uploadfs --upload-port /dev/ttyUSB0
 
-4. Verify the board is running correctly. Open a serial terminal (see
+#. Verify the board is running correctly. Open a serial terminal (see
    :any:`tools`) and press Enter — you should see a prompt like ``CMD>``. You
    can also press the **Reset** button on the board to view startup messages.
 
